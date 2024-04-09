@@ -15,7 +15,7 @@ const JobListing = ({ job }) => {
         </div>
 
         <div className="mb-5">{description}</div>
-        <button className="bg-black rounded-xl text-xl text-indigo-500 px-3 mb-5 hover:text-indigo-700">
+        <button onClick={()=>setShowFulldescription((prevState)=>!prevState)} className="bg-black rounded-xl text-xl text-indigo-500 px-3 mb-5 hover:text-indigo-700">
           {showFullDescription ? "less" : "more"}
         </button>
 
